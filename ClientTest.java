@@ -3,10 +3,10 @@ import javax.swing.JOptionPane;
 
 public class ClientTest {
    public static void main(String[] args) {
-      String ipa;
-      ipa = JOptionPane.showInputDialog ( "Enter IP:" ); 
+      String ipaddress;
+      ipaddress = JOptionPane.showInputDialog ( "Enter IP:" ); 
       Client objec;
-      objec = new Client(ipa);
+      objec = new Client(ipaddress);
       objec.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       objec.startRunning();
    }
