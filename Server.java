@@ -33,6 +33,7 @@ public class Server extends JFrame{
       setVisible(true);
    }
    
+   //512
    //set up and run the server
    public void startRunning(){
       try{
@@ -43,7 +44,7 @@ public class Server extends JFrame{
                setupStreams();
                whileChatting();
             }catch(EOFException eofException){
-               showMessage("\n Server ended the connection! ");
+               showMessage("\n Error: 512. Server ended the connection! ");
             }finally{
                closeRubbish();
             }
