@@ -90,7 +90,9 @@ public class Client extends JFrame{
          ioException.printStackTrace();
       }
    }
-   //415
+
+
+   //413
    //send messages to server
    private void sendMessage(String message){
       try{
@@ -98,7 +100,9 @@ public class Client extends JFrame{
          output.flush();
          showMessage("\nCLIENT - " + message);
       }catch(IOException ioException){
-         chatWindow.append("\n Error: 415");
+
+         chatWindow.append("\n Error: 413. Somthing Went Wrong :<");
+
       }
    }
    
